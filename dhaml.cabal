@@ -1,0 +1,18 @@
+name:                dhaml
+version:             0.1.0.0
+homepage:            https://github.com/robbiemcmichael/dhaml#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Robbie McMichael
+maintainer:          2044464+robbiemcmichael@users.noreply.github.com
+copyright:           Robbie McMichael
+category:            YAML
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+executable dhaml
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
