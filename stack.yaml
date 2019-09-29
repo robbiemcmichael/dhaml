@@ -1,3 +1,11 @@
 resolver: lts-14.7
 packages:
 - .
+extra-deps:
+- dhall-1.26.0@sha256:0f559ab8ed9d7b7f1ed0e2a99a9aadee00d8c6c63b92e9be209d84f7f4197b10,33247
+- dhall-json-1.4.1@sha256:5b0dac356e84d03e855aa4e8aa455532c4c4a274154e26756ae77ebbc82c89a4,5398
+- git: git@github.com:robbiemcmichael/yaml.git
+  commit: f7fecb0febd212fbbd5a7778290203684e3c9ef0
+  subdirs:
+  - libyaml
+  - yaml

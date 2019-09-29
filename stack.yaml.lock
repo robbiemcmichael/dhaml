@@ -3,7 +3,53 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages: []
+packages:
+- completed:
+    hackage: dhall-1.26.0@sha256:0f559ab8ed9d7b7f1ed0e2a99a9aadee00d8c6c63b92e9be209d84f7f4197b10,33247
+    pantry-tree:
+      size: 221712
+      sha256: cbd35293fc6b2ef77e5d64fca3775b2915aea86ad0c3425e08d21c950fcd06ea
+  original:
+    hackage: dhall-1.26.0@sha256:0f559ab8ed9d7b7f1ed0e2a99a9aadee00d8c6c63b92e9be209d84f7f4197b10,33247
+- completed:
+    hackage: dhall-json-1.4.1@sha256:5b0dac356e84d03e855aa4e8aa455532c4c4a274154e26756ae77ebbc82c89a4,5398
+    pantry-tree:
+      size: 3387
+      sha256: 77290c47daa5960e967ff219ce9c44ffd3035e64acd6a1d42268eb366b2c4264
+  original:
+    hackage: dhall-json-1.4.1@sha256:5b0dac356e84d03e855aa4e8aa455532c4c4a274154e26756ae77ebbc82c89a4,5398
+- completed:
+    subdir: libyaml
+    cabal-file:
+      size: 2090
+      sha256: cd13f5e93f8b55bf58914ef30363a82debefd9a1b251f2848f1d66a8f0392a7b
+    name: libyaml
+    version: 0.1.1.0
+    git: git@github.com:robbiemcmichael/yaml.git
+    pantry-tree:
+      size: 5594
+      sha256: 863805229e5e3f3e21ba6dd9f0cea6e1764011560abc469aeae2e453de6901ca
+    commit: f7fecb0febd212fbbd5a7778290203684e3c9ef0
+  original:
+    subdir: libyaml
+    git: git@github.com:robbiemcmichael/yaml.git
+    commit: f7fecb0febd212fbbd5a7778290203684e3c9ef0
+- completed:
+    subdir: yaml
+    cabal-file:
+      size: 5109
+      sha256: 72072aac48b081b87948ad7ac7a19d47f7a4d2989625ceefb9cae7fb4740ea6e
+    name: yaml
+    version: 0.11.2.0
+    git: git@github.com:robbiemcmichael/yaml.git
+    pantry-tree:
+      size: 2100
+      sha256: d5fb13596dcbb3b97ee59039244bbcdf2b7bf045a5b6192b6dd0b76c433c0ca0
+    commit: f7fecb0febd212fbbd5a7778290203684e3c9ef0
+  original:
+    subdir: yaml
+    git: git@github.com:robbiemcmichael/yaml.git
+    commit: f7fecb0febd212fbbd5a7778290203684e3c9ef0
 snapshots:
 - completed:
     size: 523700
