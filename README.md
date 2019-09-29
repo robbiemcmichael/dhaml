@@ -25,6 +25,7 @@ $ cat input.dhall
 ```dhall
 { string = "foo"
 , number = 2
+, function = \(x : Natural) -> x*x : Natural
 }
 ```
 
@@ -36,13 +37,14 @@ subsequent expressions:
 $ cat template.yaml
 ```
 ```yaml
-data:
-  string: !dhall x.name
-  number: !dhall 10 * x.number + 5
+config:
+  string: !dhall x.string
+  number: !dhall x.function (x.number + 2)
   record: !dhall |
     { a = "abc"
     , b = True
     }
+  source: !dhall ./input.dhall as Text
 ```
 
 Evaluate all Dhall expressions in the YAML file with `dhaml`:
@@ -53,10 +55,15 @@ $ dhaml template.yaml <<< ./input.dhall
 ```yaml
 config:
   string: foo
-  number: 35
+  number: 16
   record:
     a: abc
     b: true
+  source: |
+    { string = "foo"
+    , number = 2
+    , function = \(x : Natural) -> x*x : Natural
+    }
 ```
 
 [dhall]: https://dhall-lang.org
