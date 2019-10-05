@@ -77,11 +77,22 @@ main = do
 processEvents :: FilePath -> Maybe (D.Expr D.Src D.X) -> ConduitT Event Event M ()
 processEvents filepath input = awaitForever $ \event -> do
     case event of
-        EventScalar expr (LY.UriTag "!dhall") _ _ -> do
+        EventScalar expr (LY.UriTag "!dhall") _ anchor -> do
             events <- lift $ catch (liftIO $ dhallToEvents filepath input expr) (handler event)
-            sourceList events
+            sourceList $ withAnchor anchor events
         _ ->
             yield event
+
+-- | Assign an 'Anchor' to the head of the 'Event' stream
+withAnchor :: LY.Anchor -> [Event] -> [Event]
+withAnchor _ [] = []
+withAnchor anchor (event:rest) = replacement:rest
+  where
+    replacement = case event of
+        LY.EventScalar v t s _      -> LY.EventScalar v t s anchor
+        LY.EventSequenceStart t s _ -> LY.EventSequenceStart t s anchor
+        LY.EventMappingStart t s _  -> LY.EventMappingStart t s anchor
+        _ -> event
 
 -- | Print any errors as the YAML file is being parsed
 handler :: MonadIO m => Event -> DhamlException -> StateT ParseState m [Event]
