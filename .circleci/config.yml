@@ -1,0 +1,23 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+    - image: fpco/stack-build:lts-14.7
+    steps:
+    - checkout
+    - restore_cache:
+        name: Restore cached dependencies
+        keys:
+        - stack-cache
+    - run:
+        name: Update dependencies
+        command: stack --no-terminal setup
+    - run:
+        name: Run tests
+        command: stack --no-terminal test
+    - save_cache:
+        name: Cache dependencies
+        key: stack-cache
+        paths:
+        - /root/.stack
+        - .stack-work

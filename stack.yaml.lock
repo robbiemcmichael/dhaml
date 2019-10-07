@@ -25,14 +25,14 @@ packages:
       sha256: cd13f5e93f8b55bf58914ef30363a82debefd9a1b251f2848f1d66a8f0392a7b
     name: libyaml
     version: 0.1.1.0
-    git: git@github.com:robbiemcmichael/yaml.git
+    git: https://github.com/robbiemcmichael/yaml.git
     pantry-tree:
       size: 5594
       sha256: 863805229e5e3f3e21ba6dd9f0cea6e1764011560abc469aeae2e453de6901ca
     commit: f7fecb0febd212fbbd5a7778290203684e3c9ef0
   original:
     subdir: libyaml
-    git: git@github.com:robbiemcmichael/yaml.git
+    git: https://github.com/robbiemcmichael/yaml.git
     commit: f7fecb0febd212fbbd5a7778290203684e3c9ef0
 - completed:
     subdir: yaml
@@ -41,14 +41,14 @@ packages:
       sha256: 72072aac48b081b87948ad7ac7a19d47f7a4d2989625ceefb9cae7fb4740ea6e
     name: yaml
     version: 0.11.2.0
-    git: git@github.com:robbiemcmichael/yaml.git
+    git: https://github.com/robbiemcmichael/yaml.git
     pantry-tree:
       size: 2100
       sha256: d5fb13596dcbb3b97ee59039244bbcdf2b7bf045a5b6192b6dd0b76c433c0ca0
     commit: f7fecb0febd212fbbd5a7778290203684e3c9ef0
   original:
     subdir: yaml
-    git: git@github.com:robbiemcmichael/yaml.git
+    git: https://github.com/robbiemcmichael/yaml.git
     commit: f7fecb0febd212fbbd5a7778290203684e3c9ef0
 snapshots:
 - completed:
