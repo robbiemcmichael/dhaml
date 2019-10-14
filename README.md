@@ -17,6 +17,17 @@ This has several benefits over traditional YAML templating approaches:
 
 ## Usage
 
+```
+Usage: dhaml FILE [-i|--input]
+
+Available options:
+  FILE                     YAML file containing Dhall expressions
+  -i,--input               Bind the expression from stdin to x
+  -h,--help                Show this help text
+```
+
+### Worked example
+
 Start with an input file containing a Dhall value:
 
 ```bash
@@ -50,7 +61,7 @@ config:
 Evaluate all Dhall expressions in the YAML file with `dhaml`:
 
 ```bash
-$ dhaml template.yaml <<< ./input.dhall
+$ dhaml template.yaml -i <<< ./input.dhall
 ```
 ```yaml
 config:
