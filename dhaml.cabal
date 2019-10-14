@@ -11,24 +11,41 @@ build-type:          Simple
 cabal-version:       >=1.10
 extra-source-files:  README.md
 
-executable dhaml
-  hs-source-dirs:      src
-  main-is:             Main.hs
+library
   default-language:    Haskell2010
   ghc-options:         -Wall
+  hs-source-dirs:      src
+
+  exposed-modules:
+    Dhaml.Dhall
+    Dhaml.Internal
+
   build-depends:
       base       >= 4.7 && < 5
     , aeson
     , bytestring
     , conduit
-    , containers
     , dhall      >= 1.26.0
     , dhall-json >= 1.4.1
-    , directory
     , exceptions
-    , filepath
     , libyaml
     , resourcet
     , text
     , transformers
     , yaml
+
+executable dhaml
+  default-language:    Haskell2010
+  ghc-options:         -Wall
+  hs-source-dirs:      exe
+  main-is:             Dhaml.hs
+
+  build-depends:
+      base
+    , bytestring
+    , conduit
+    , dhaml
+    , filepath
+    , libyaml
+    , optparse-applicative
+    , text
