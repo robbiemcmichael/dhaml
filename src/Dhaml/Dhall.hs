@@ -16,7 +16,7 @@ import Control.Monad.Trans.State (modify)
 import Data.Aeson (Value)
 import Data.ByteString.Char8 (ByteString)
 import Data.Text.Encoding (decodeUtf8)
-import qualified Data.Yaml as Y
+import Data.Yaml.Internal (defaultStringStyle, objToEvents)
 import Dhall (inputExpr)
 import Dhall.Core hiding (value)
 import Dhall.Import (SemanticCacheMode(..), loadRelativeTo)
@@ -70,7 +70,7 @@ exprToEvents context bs = do
     let expr3 = maybe expr2 (\x -> subst (V "x" 0) x expr2) $ input context
     _     <- eitherThrow DhamlTypeError $ typeOf expr3
     value <- toValue $ normalize expr3
-    return $ Y.objToEvents Y.defaultEncodeOptions value []
+    return $ objToEvents defaultStringStyle value []
 
 -- | Convert a Dhall 'Expr' into an Aeson 'Value'
 toValue :: Expr Src X -> IO Value
