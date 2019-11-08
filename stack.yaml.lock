@@ -19,40 +19,15 @@ packages:
   original:
     hackage: dhall-json-1.4.1@sha256:5b0dac356e84d03e855aa4e8aa455532c4c4a274154e26756ae77ebbc82c89a4,5398
 - completed:
-    subdir: libyaml
-    cabal-file:
-      size: 2090
-      sha256: cd13f5e93f8b55bf58914ef30363a82debefd9a1b251f2848f1d66a8f0392a7b
-    name: libyaml
-    version: 0.1.1.0
-    git: https://github.com/robbiemcmichael/yaml.git
+    hackage: yaml-0.11.2.0@sha256:72072aac48b081b87948ad7ac7a19d47f7a4d2989625ceefb9cae7fb4740ea6e,5109
     pantry-tree:
-      size: 5594
-      sha256: 863805229e5e3f3e21ba6dd9f0cea6e1764011560abc469aeae2e453de6901ca
-    commit: f7fecb0febd212fbbd5a7778290203684e3c9ef0
+      size: 1988
+      sha256: d28cc1cb803555393d32e66359e11da6e2fb18251e7314e867e9dfdc06aaa82a
   original:
-    subdir: libyaml
-    git: https://github.com/robbiemcmichael/yaml.git
-    commit: f7fecb0febd212fbbd5a7778290203684e3c9ef0
-- completed:
-    subdir: yaml
-    cabal-file:
-      size: 5109
-      sha256: 72072aac48b081b87948ad7ac7a19d47f7a4d2989625ceefb9cae7fb4740ea6e
-    name: yaml
-    version: 0.11.2.0
-    git: https://github.com/robbiemcmichael/yaml.git
-    pantry-tree:
-      size: 2100
-      sha256: d5fb13596dcbb3b97ee59039244bbcdf2b7bf045a5b6192b6dd0b76c433c0ca0
-    commit: f7fecb0febd212fbbd5a7778290203684e3c9ef0
-  original:
-    subdir: yaml
-    git: https://github.com/robbiemcmichael/yaml.git
-    commit: f7fecb0febd212fbbd5a7778290203684e3c9ef0
+    hackage: yaml-0.11.2.0@sha256:72072aac48b081b87948ad7ac7a19d47f7a4d2989625ceefb9cae7fb4740ea6e,5109
 snapshots:
 - completed:
-    size: 523700
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/14/7.yaml
-    sha256: 8e3f3c894be74d71fa4bf085e0a8baae7e4d7622d07ea31a52736b80f8b9bb1a
-  original: lts-14.7
+    size: 525876
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/14/13.yaml
+    sha256: 4a0e79eb194c937cc2a1852ff84d983c63ac348dc6bad5f38d20cab697036eef
+  original: lts-14.13
