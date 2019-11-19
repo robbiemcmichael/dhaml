@@ -22,7 +22,7 @@ library
 
   build-depends:
       base         >= 4.7 && < 5
-    , aeson
+    , aeson        >= 1.4.6.0
     , bytestring
     , conduit
     , dhall        >= 1.26.0
