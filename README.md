@@ -15,6 +15,23 @@ This has several benefits over traditional YAML templating approaches:
   from a URL. This allows complex expressions to be moved into dedicated
   `.dhall` files or turned into a library.
 
+## Releases
+
+- Statically linked executables are available from the [releases][releases] page
+- Docker images are published to [`robbiemcmichael/dhaml`][docker-hub] on
+  Docker Hub
+
+The Docker release is a scratch image containing only the executable. It will
+likely be more useful to copy the executable into a new Docker image along with
+any other tools needed, for example:
+
+```dockerfile
+FROM alpine:latest
+
+COPY --from=dhallhaskell/dhall:1.27.0 /bin/dhall /bin/
+COPY --from=robbiemcmichael/dhaml:0.1.0 /bin/dhaml /bin/
+```
+
 ## Usage
 
 ```
@@ -79,3 +96,5 @@ config:
 
 [dhall]: https://dhall-lang.org
 [tag]: https://yaml.org/spec/1.2/spec.html#id2761292
+[releases]: https://github.com/robbiemcmichael/dhaml/releases
+[docker-hub]: https://hub.docker.com/r/robbiemcmichael/dhaml
