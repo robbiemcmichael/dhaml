@@ -28,8 +28,8 @@ any other tools needed, for example:
 ```dockerfile
 FROM alpine:latest
 
-COPY --from=dhallhaskell/dhall:1.28.0 /bin/dhall /bin/
-COPY --from=robbiemcmichael/dhaml:0.2.0 /bin/dhaml /bin/
+COPY --from=dhallhaskell/dhall:1.30.0 /bin/dhall /bin/
+COPY --from=robbiemcmichael/dhaml:0.3.0 /bin/dhaml /bin/
 ```
 
 ## Usage

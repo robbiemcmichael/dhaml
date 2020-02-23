@@ -11,7 +11,7 @@
 let
   cabalPackageName = "dhaml";
   compiler = "ghc865";
-  snapshot = "2019-12-28T00:00:00Z";
+  snapshot = "2020-02-24T00:00:00Z";
 
   # Pin static-haskell-nix version.
   static-haskell-nix =
