@@ -25,8 +25,8 @@ library
     , aeson        >= 1.4.6.0
     , bytestring
     , conduit
-    , dhall        >= 1.28.0
-    , dhall-json   >= 1.6.0
+    , dhall        >= 1.30.0
+    , dhall-json   >= 1.6.2
     , exceptions
     , libyaml
     , resourcet

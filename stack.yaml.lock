@@ -5,19 +5,19 @@
 
 packages:
 - completed:
-    hackage: dhall-1.28.0@sha256:a0b38be83ab76c59adf6d67868b9b183591edc68d2c3727d38598ddc12c36c95,31625
+    hackage: dhall-1.30.0@sha256:38d6c37fda7fc5d32bd90cd6172efe25a4eb7c9949c0ce015a4be500c7825fdd,32875
     pantry-tree:
-      size: 241424
-      sha256: 8c92a349408edf2c72760025740b4950cd0a1d2ce0ba393333332c1bbc469967
+      size: 248056
+      sha256: 04ab967ef886c3cbf95cef574d8e906a81be3cb56ca192921ea280aaf1fa0f42
   original:
-    hackage: dhall-1.28.0@sha256:a0b38be83ab76c59adf6d67868b9b183591edc68d2c3727d38598ddc12c36c95,31625
+    hackage: dhall-1.30.0@sha256:38d6c37fda7fc5d32bd90cd6172efe25a4eb7c9949c0ce015a4be500c7825fdd,32875
 - completed:
-    hackage: dhall-json-1.6.0@sha256:a3c808ac29adb91fbbb4002fa11885b045f4f28933ce5102223a67dda8aa9cfd,4088
+    hackage: dhall-json-1.6.2@sha256:e4e7a56ada027ee6aa901a759dee46a5076eaa6c401ef9efbf4a7ee8014ad9ae,4087
     pantry-tree:
-      size: 3181
-      sha256: 52175ac87a2c446aca84d4413b3f3e50f7cbbf4fea73f67340184d6924dc7d6f
+      size: 3990
+      sha256: 80804b22821d93d98499c2a4aef854d2b8cde178ffa20a369d310fe7bff5090a
   original:
-    hackage: dhall-json-1.6.0@sha256:a3c808ac29adb91fbbb4002fa11885b045f4f28933ce5102223a67dda8aa9cfd,4088
+    hackage: dhall-json-1.6.2@sha256:e4e7a56ada027ee6aa901a759dee46a5076eaa6c401ef9efbf4a7ee8014ad9ae,4087
 - completed:
     hackage: aeson-yaml-1.0.5.0@sha256:5786f021c1e088d6a5aa259120ec5b1f22bb1757f4427c1a87e0513d00f17f31,1975
     pantry-tree:
@@ -26,15 +26,15 @@ packages:
   original:
     hackage: aeson-yaml-1.0.5.0@sha256:5786f021c1e088d6a5aa259120ec5b1f22bb1757f4427c1a87e0513d00f17f31,1975
 - completed:
-    hackage: prettyprinter-1.5.1@sha256:fca87c3e2611d3499a0341a59857e9b424a23f31646e4737d535a18582284f96,5375
+    hackage: prettyprinter-1.6.1@sha256:11876ec94a79048e1d2942a99bfaa6f2be5222eafeedac6a9545673a79465009,5459
     pantry-tree:
-      size: 2106
-      sha256: 86fd583112db41bac5ac9ecf258ec402ad615253e9c5eabc56ec127bfb94c096
+      size: 2194
+      sha256: b8ddc48e267da0bc8da3082929b478df80c3c986865394f93e7bc7631c0031cf
   original:
-    hackage: prettyprinter-1.5.1@sha256:fca87c3e2611d3499a0341a59857e9b424a23f31646e4737d535a18582284f96,5375
+    hackage: prettyprinter-1.6.1@sha256:11876ec94a79048e1d2942a99bfaa6f2be5222eafeedac6a9545673a79465009,5459
 snapshots:
 - completed:
-    size: 524799
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/14/17.yaml
-    sha256: 1d72b33c0fc048e23f4f18fd76a6ad79dd1d8a3c054644098a71a09855e40c7c
-  original: lts-14.17
+    size: 524996
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/14/27.yaml
+    sha256: 7ea31a280c56bf36ff591a7397cc384d0dff622e7f9e4225b47d8980f019a0f0
+  original: lts-14.27
